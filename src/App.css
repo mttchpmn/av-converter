@@ -22,7 +22,26 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* padding-top: 40px; */
+  padding-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.flexRow {
+  display: flex;
+  justify-content: center;
+}
+
+.dataInput {
+  padding: 20px;
+}
+
+.DistanceConverter {
+  background-color: #909090;
+  color: #ffF;
 }
