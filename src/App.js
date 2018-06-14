@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import DistanceConverter from './components/DistanceConverter';
 import TempConverter from './components/TempConverter';
+import WeightConverter from './components/WeightConverter';
 
 class App extends Component {
   render() {
@@ -11,8 +12,7 @@ class App extends Component {
         <h1 className="header1">Aviation Converter</h1>
         <DistanceConverter />
         <TempConverter />
-        <DistanceConverter />
-        <TempConverter />
+        <WeightConverter />
       </div>
     );
   }

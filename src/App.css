@@ -41,7 +41,8 @@
   padding: 20px;
 }
 
-.DistanceConverter {
+.DistanceConverter,
+.WeightConverter {
   background-color: #909090;
   color: #ffF;
 }
