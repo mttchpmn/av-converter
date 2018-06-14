@@ -36,7 +36,7 @@ body {
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   /* border: 1px solid black; */
   border-radius: 15px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -95,4 +95,16 @@ img.icon {
   /* color: #ffF; */
   border-top: rgba(255, 255, 255,0.1) solid 1px;
   border-bottom: rgba(255, 255, 255, 0.1) solid 1px;
+}
+
+.creditFooter {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.creditFooter a {
+  /* text-decoration: none; */
+  color: white;
+
 }

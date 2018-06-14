@@ -9,6 +9,7 @@ import VolumeConverter from './components/VolumeConverter';
 class App extends Component {
   render() {
     return (
+      <div>
       <div className="App">
         <h1 className="header1">Aviation Data Converter</h1>
         <DistanceConverter />
@@ -16,6 +17,8 @@ class App extends Component {
         <WeightConverter />
         <VolumeConverter />
       </div>
+        <p className="creditFooter">Built with ♥ by <a href="http://github.com/mttchpmn">Matt Chapman</a></p>
+        </div>
     );
   }
 }
