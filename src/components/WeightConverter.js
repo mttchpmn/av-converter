@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import weight from './weight.svg';
 
 class WeightConverter extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class WeightConverter extends Component {
         return (
             <div className="kilometres dataInput">
                 <h3 className="header3">Kilograms</h3>
-                <input type="number" placeholder="" value={this.state.kg} onChange={event => this.handleInputChange(event, 'kg')} />
+                <input type="number" placeholder="Kg" value={this.state.kg} onChange={event => this.handleInputChange(event, 'kg')} />
             </div>
         );
     };
@@ -22,7 +23,7 @@ class WeightConverter extends Component {
         return (
             <div className="nauticalMiles dataInput">
                 <h3 className="header3">Pounds</h3>
-                <input type="number" placeholder="" value={this.state.lb} onChange={event => this.handleInputChange(event, 'lb')} />
+                <input type="number" placeholder="Lb" value={this.state.lb} onChange={event => this.handleInputChange(event, 'lb')} />
             </div>
         );
     }; 
@@ -50,6 +51,7 @@ class WeightConverter extends Component {
     render() {
         return(
             <div className="WeightConverter flexRow">
+                <img className="icon weightIcon" src={weight} />
                 <this.Kilograms />
                 <this.Pounds />
             </div>

@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import temp from './temp.svg';
 
 class TempConverter extends Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class TempConverter extends Component {
         return (
             <div className="celsius dataInput">
                 <h3 className="header3">Celsius</h3>
-                <input type="number" placeholder="" value={this.state.celsius} onChange={event => this.handleInputChange(event, 'celsius')} />
+                <input type="number" placeholder="deg C" value={this.state.celsius} onChange={event => this.handleInputChange(event, 'celsius')} />
             </div>
         );
     };
@@ -23,7 +24,7 @@ class TempConverter extends Component {
         return (
             <div className="fahrenheit dataInput">
                 <h3 className="header3">Fahrenheit</h3>
-                <input type="number" placeholder="" value={this.state.fahrenheit} onChange={event => this.handleInputChange(event, 'fahrenheit')} />
+                <input type="number" placeholder=" deg F" value={this.state.fahrenheit} onChange={event => this.handleInputChange(event, 'fahrenheit')} />
             </div>
         );
     };
@@ -42,6 +43,7 @@ class TempConverter extends Component {
     render() {
         return(
             <div className="TempConverter flexRow">
+                <img className="icon tempIcon" src={temp} />
                 <this.Celsius />
                 <this.Fahrenheit />
             </div>

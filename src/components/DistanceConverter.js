@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import distance from './distance.svg';
 
 class DistanceConverter extends Component {
     constructor(props) {
@@ -66,6 +67,7 @@ class DistanceConverter extends Component {
     render() {
         return(
             <div className="DistanceConverter flexRow">
+                <img className="icon distanceIcon" src={distance} />
                 <this.Kilometres />
                 <this.NauticalMiles />
                 <this.StatuteMiles />

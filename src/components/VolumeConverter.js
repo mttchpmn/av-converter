@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import volume from './volume.svg';
 
 class VolumeConverter extends Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class VolumeConverter extends Component {
         return (
             <div className="Litres dataInput">
                 <h3 className="header3">Litres</h3>
-                <input type="number" placeholder="" value={this.state.litres} onChange={event => this.handleInputChange(event, 'litres')} />
+                <input type="number" placeholder="L" value={this.state.litres} onChange={event => this.handleInputChange(event, 'litres')} />
             </div>
         );
     };
@@ -23,7 +24,7 @@ class VolumeConverter extends Component {
         return (
             <div className="Gallons dataInput">
                 <h3 className="header3">Gallons</h3>
-                <input type="number" placeholder="" value={this.state.gallons} onChange={event => this.handleInputChange(event, 'gallons')} />
+                <input type="number" placeholder="G" value={this.state.gallons} onChange={event => this.handleInputChange(event, 'gallons')} />
             </div>
         );
     };
@@ -32,7 +33,7 @@ class VolumeConverter extends Component {
         return (
             <div className="ImpGallons dataInput">
                 <h3 className="header3">Imperial Gallons</h3>
-                <input type="number" placeholder="" value={this.state.impGallons} onChange={event => this.handleInputChange(event, 'impGallons')} />
+                <input type="number" placeholder="G" value={this.state.impGallons} onChange={event => this.handleInputChange(event, 'impGallons')} />
             </div>
         );
     };
@@ -66,6 +67,7 @@ class VolumeConverter extends Component {
     render() {
         return (
             <div className="VolumeConverter flexRow">
+                <img className="icon volumeIcon" src={volume} />
                 <this.Litres />
                 <this.Gallons />
                 <this.ImpGallons />

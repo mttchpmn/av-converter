@@ -1,5 +1,16 @@
+body {
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
 .App {
   text-align: center;
+  /* background-color: rgba(655, 255, 255, 0.5) */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 .App-logo {
@@ -28,21 +39,47 @@
   margin-top: 100px;
   /* padding-top: 40px; */
   padding-bottom: 20px;
-  border: 1px solid black;
-  border-radius: 4px;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  
 }
 
 .flexRow {
   display: flex;
   justify-content: center;
 }
+@media screen
+  and (max-width: 600px) {
+    .App {
+      margin-top: 0px;
+      border-radius: 0px;
+    }
+    .flexRow {
+      display: initial;
+    }
+  }
 
 .dataInput {
   padding: 20px;
 }
 
-.DistanceConverter,
+.dataInput input {
+  border-radius: 20px;
+  border-style: none;
+  min-height: 30px;
+  max-width: 120px;
+  text-align: center;
+}
+
+.dataInput input:focus {
+  outline: none;
+}
+
+.TempConverter,
 .WeightConverter {
-  background-color: #909090;
-  color: #ffF;
+  /* background-color: #909090; */
+  /* color: #ffF; */
+  border-top: rgba(255, 255, 255,0.1) solid 1px;
+  border-bottom: rgba(255, 255, 255, 0.1) solid 1px;
 }
