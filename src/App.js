@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="header1">Aviation Converter</h1>
+        <h1 className="header1">Aviation Data Converter</h1>
         <DistanceConverter />
         <TempConverter />
         <WeightConverter />
