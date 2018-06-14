@@ -4,6 +4,7 @@ import './App.css';
 import DistanceConverter from './components/DistanceConverter';
 import TempConverter from './components/TempConverter';
 import WeightConverter from './components/WeightConverter';
+import VolumeConverter from './components/VolumeConverter';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <DistanceConverter />
         <TempConverter />
         <WeightConverter />
+        <VolumeConverter />
       </div>
     );
   }
